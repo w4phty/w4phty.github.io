@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Cybersécurité</title>
+  <meta name="description" content="Portfolio de reconversion vers la cybersécurité — SOC Analyst / Detection Engineer, IR / DFIR." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230A0E14'/%3E%3Ctext x='32' y='42' font-family='monospace' font-size='26' fill='%2335D6C4' text-anchor='middle'%3E%3E_%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Aller au contenu</a>
+
+  <header class="navbar">
+    <div class="nav-inner">
+      <a class="brand" href="#top" aria-label="Retour en haut de page">
+        <span id="brand-name">Votre Nom</span>
+        <span class="brand-ext" id="brand-ext">.sec</span>
+      </a>
+
+      <nav class="nav-links" id="nav-links">
+        <a class="nav-link" href="#about" id="nav-about">À propos</a>
+        <a class="nav-link" href="#skills" id="nav-skills">Compétences</a>
+        <a class="nav-link" href="#projects" id="nav-projects">Projets</a>
+        <a class="nav-link" href="#certifications" id="nav-certifications">Certifications</a>
+        <a class="nav-link" href="#timeline" id="nav-timeline">Parcours</a>
+        <a class="nav-link" href="#contact" id="nav-contact">Contact</a>
+      </nav>
+
+      <div class="nav-right">
+        <a class="btn btn-primary btn-sm nav-cv-btn" id="nav-cv-link" href="assets/cv.pdf" target="_blank" rel="noopener noreferrer">
+          <span id="nav-cv-label">CV</span>
+        </a>
+        <div class="lang-toggle" role="group" aria-label="Choix de la langue / Language selection">
+          <button type="button" class="lang-btn" data-lang="fr">FR</button>
+          <button type="button" class="lang-btn" data-lang="en">EN</button>
+        </div>
+        <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Ouvrir le menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top">
+      <div class="container hero-inner">
+        <div class="hero-left">
+          <div class="hero-boot" id="hero-boot" aria-hidden="true"></div>
+          <h1 class="hero-title">
+            <span id="hero-title-1">De développeur</span>
+            <span class="accent-line" id="hero-title-2">à analyste SOC.</span>
+          </h1>
+          <p class="hero-subtitle" id="hero-subtitle"></p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#projects" id="hero-cta-primary">Voir les projets</a>
+            <a class="btn btn-secondary" href="#contact" id="hero-cta-secondary">Me contacter</a>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="asset-card">
+            <div class="asset-card-head">
+              <span>ASSET_PROFILE.LOG</span>
+              <span class="asset-dots"><span></span><span></span><span></span></span>
+            </div>
+            <div class="asset-card-body" id="asset-card-body"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow" id="about-eyebrow">// à propos</span>
+          <h2 class="section-title" id="about-title">Qui je suis</h2>
+        </div>
+        <div class="about-content" id="about-paragraphs"></div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow" id="skills-eyebrow">// compétences</span>
+          <h2 class="section-title" id="skills-title">Compétences techniques</h2>
+          <p class="section-subtitle" id="skills-subtitle"></p>
+        </div>
+        <div class="skills-grid" id="skills-grid"></div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow" id="projects-eyebrow">// projets</span>
+          <h2 class="section-title" id="projects-title">Projets &amp; case log</h2>
+          <p class="section-subtitle" id="projects-subtitle"></p>
+        </div>
+        <div class="projects-grid" id="projects-grid"></div>
+      </div>
+    </section>
+
+    <!-- ============ CERTIFICATIONS ============ -->
+    <section class="section" id="certifications">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow" id="certifications-eyebrow">// certifications</span>
+          <h2 class="section-title" id="certifications-title">Certifications &amp; formation continue</h2>
+          <p class="section-subtitle" id="certifications-subtitle"></p>
+        </div>
+        <div class="cert-list" id="cert-list"></div>
+      </div>
+    </section>
+
+    <!-- ============ TIMELINE ============ -->
+    <section class="section" id="timeline">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow" id="timeline-eyebrow">// parcours</span>
+          <h2 class="section-title" id="timeline-title">Formation &amp; expérience</h2>
+        </div>
+        <div class="timeline-list" id="timeline-list"></div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section" id="contact">
+      <div class="container contact-inner">
+        <div class="contact-left">
+          <span class="eyebrow" id="contact-eyebrow">// contact</span>
+          <h2 class="section-title" id="contact-title">Me contacter</h2>
+          <p class="contact-text" id="contact-text"></p>
+          <div class="contact-links">
+            <a class="btn btn-secondary" id="contact-email-link" href="mailto:votre.email@example.com">
+              <span id="contact-email-label">Email</span>
+            </a>
+            <a class="btn btn-secondary" href="https://www.linkedin.com/in/votre-profil" target="_blank" rel="noopener noreferrer">
+              <span id="contact-linkedin-label">LinkedIn</span>
+            </a>
+            <a class="btn btn-secondary" href="https://github.com/votre-user" target="_blank" rel="noopener noreferrer">
+              <span id="contact-github-label">GitHub</span>
+            </a>
+            <a class="btn btn-primary" href="assets/cv.pdf" target="_blank" rel="noopener noreferrer" id="contact-cv-link">
+              <span id="contact-cv-label">Télécharger mon CV</span>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contact-form">
+          <div class="form-row">
+            <label for="cf-name" id="cf-name-label">Nom</label>
+            <input type="text" id="cf-name" name="name" autocomplete="name" required />
+          </div>
+          <div class="form-row">
+            <label for="cf-email" id="cf-email-label">Votre email</label>
+            <input type="email" id="cf-email" name="email" autocomplete="email" required />
+          </div>
+          <div class="form-row">
+            <label for="cf-message" id="cf-message-label">Message</label>
+            <textarea id="cf-message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block" id="cf-submit">Envoyer</button>
+          <p class="form-status" id="cf-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container" style="display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px; width:100%;">
+      <span id="footer-text">© 2026 Votre Nom</span>
+      <span>index.html · style.css · app.js</span>
+    </div>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
