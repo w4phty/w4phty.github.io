@@ -1,12 +1,4 @@
-// ⚠️ FORMULAIRE DE CONTACT — à faire avant mise en ligne si vous voulez que
-// le formulaire envoie réellement un email (le bouton "Email" en mailto:,
-// lui, fonctionne déjà sans aucune configuration) :
-//   1. Créez un compte gratuit sur https://formspree.io
-//   2. Créez un formulaire, copiez son ID (ex: "abcdwxyz")
-//   3. Remplacez l'URL ci-dessous par https://formspree.io/f/VOTRE_ID
-// Tant que ce n'est pas fait, le formulaire affichera proprement un message
-// d'erreur invitant à utiliser le bouton Email — rien n'est cassé pour autant.
-const FORMSPREE_ENDPOINT = "https://formspree.io/f/VOTRE_ID";
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/mdenbzwa";
 
 const CONTENT = {
   fr: {
@@ -19,7 +11,7 @@ const CONTENT = {
       skills: "Compétences",
       projects: "Projets",
       certifications: "Certifications",
-      timeline: "Parcours",
+      timeline: "Expérience",
       contact: "Contact",
       cvLabel: "Télécharger mon CV",
     },
@@ -28,25 +20,25 @@ const CONTENT = {
       boot: [
         "$ whoami",
         "> 3 ans en développement logiciel",
-        "> transition vers la cybersécurité défensive : Blue team / SOC / DFIR",
+        "> transition vers la cybersécurité défensive",
       ],
       titleLine1: "Du développement logiciel",
       titleLine2: "à la cybersécurité.",
       subtitle:
-        "Je mets 3 ans d'expérience en développement au service de la détection et de la réponse à incident. Mon portfolio contient des labs, writeups et outils, documentés et publiés au fil de l'eau.",
+        "Je mets 3 ans d'expérience en développement au service de la détection et de la réponse à incident. Mon portfolio contient des labs, writeups et outils, documentés et publiés au fil de ma progression.",
       ctaPrimary: "Voir les projets",
       ctaSecondary: "Me contacter",
       profile: {
         id: "ID",
         idValue: "ANALYST-0001",
         role: "FOCUS ACTUEL",
-        roleValue: "Cybersécurité défensive — SOC & détection",
+        roleValue: "Cybersécurité défensive — SOC Détection & Investigation",
         background: "BACKGROUND",
         backgroundValue: "3 ans  — Développement logiciel",
         status: "STATUT",
         statusValue: "ACTIVE — à l'écoute d'opportunités",
         focus: "TRAJECTOIRE",
-        focusValue: "Detection Engineering & Incident Investigation → IR / DFIR / CERT",
+        focusValue: "SOC → IR / DFIR / CERT",
       },
     },
 
@@ -55,7 +47,7 @@ const CONTENT = {
       title: "Qui je suis",
       paragraphs: [
         "Après <strong>3 ans en tant que développeuse</strong>, je me reconvertis vers la cybersécurité défensive, avec pour objectif intégrer une équipe SOC en tant qu'<strong>Analyste</strong> ou <strong>Detection Engineer</strong>, puis évoluer vers la réponse à incident et l'investigation numérique (<strong>IR / DFIR / CERT</strong>).",
-        "Mon expérience en développement est un atout direct pour cette transition : capacité à scripter et automatiser, lecture de logs applicatifs, connaissance des mécanismes de sécurité applicatifs, et gestion de la documentation techniques.",
+        "Mon expérience en développement est un atout direct pour cette transition : capacité à développer des outils internes, à créer des scripts d'automatisation selon le besoin, lecture de logs applicatifs, gestion de la documentation techniques.",
         "Cette page rassemble mes différents projets techniques, répartis sur plusieurs dépôts GitHub, et donne une vue d'ensemble de ma progression et de mes compétences.",
       ],
     },
@@ -63,31 +55,27 @@ const CONTENT = {
     skills: {
       eyebrow: "// compétences",
       title: "Compétences techniques",
-      subtitle: "Organisées par pôle",
+      subtitle: "",
       categories: [
         {
-          name: "Logs: lecture et collecte",
-          items: ["Windows Event Logs", "Sysmon", "Rsyslog", "journald", "Auditd", "Zeek"],
+          name: "Detection Engineering",
+          items: ["Sigma", "YARA","Suricata", "Splunk SPL","MITRE ATT&CK"],
         },
         {
-          name: "Détection: écriture des alertes",
-          items: ["Suricata", "YARA", "Recherches enregistrées Splunk", "Sigma", "framework MITRE ATT&CK"],
+          name: "SIEM & Gestion des logs",
+          items: ["Splunk", "Dashboards", "Investigation", "Windows Event Logs", "Sysmon", "Rsyslog", "journald", "Auditd"]
         },
         {
-          name: "SIEM (Splunk)",
-          items: ["Investigation des logs", "Création et lecture de dashboards", "Ingestion et parsing des logs"]
+          name: "Network Security & Traffic Analysis",
+          items: ["Zeek", "Modèle TCP/IP", "Wireshark", "tcpdump", "DNS", "TCP", "TLS", "HTTP", "QUIC"]
         },
         {
-          name: "Analyse réseau",
-          items: ["Investigation des logs réseau", "Modèle TCP/IP", "Wireshark", "tcpdump", "Protocoles DNS, ARP, ICMP, TCP, UDP, TLS, HTTP, QUIC"]
-        },
-        {
-          name: "Développement & automatisation",
-          items: ["Python", "Bash", "Développement d'outils internes d'automatisation"],
+          name: "Développement logiciel",
+          items: ["Développement d'outils internes", "automatisation", "Python", "Bash", "Java", "Spring Boot", "Angular", "SQL", "Oracle", "Mulesoft", "Dataweave"],
         },
         {
           name: "Sécurité offensive",
-          items: ["Méthodologie de pentest", "Reconnaissance", "Recherche de vulnérabilités", "Exploitation", "Nmap", "BurpSuite", "gobuster", "Hydra", "sqlmap", "SMBClient", "Mimikatz"],
+          items: ["Méthodologie de pentest", "Reconnaissance", "Recherche de vulnérabilités", "Exploitation", "Escalade de privilèges", "Nmap", "BurpSuite", "Gobuster", "Hydra", "Sqlmap", "SMBClient", "Mimikatz"],
         },
         {
           name: "Reverse Engineering & Malware (Montée en compétence en cours)",
@@ -95,7 +83,7 @@ const CONTENT = {
         },
         {
           name: "Environnement & outils",
-          items: ["git", "Gitlab/Github", "Docker", "Windows", "Linux Ubuntu & Kali", "VirtualBox"],
+          items: ["Git", "Gitlab/Github", "Windows", "Linux", "VirtualBox", "Jenkins", "Docker"],
         },
       ],
     },
@@ -103,7 +91,7 @@ const CONTENT = {
     projects: {
       eyebrow: "// projets",
       title: "Projets",
-      subtitle: "Chaque projet vit dans son propre dépôt GitHub, alimenté au fil de ma progression.",
+      subtitle: "Chaque projet est disponible sur un repository GitHub, et est alimenté au fil de ma progression.",
       viewRepo: "Voir le repo",
       comingSoon: "Repo bientôt disponible",
       objectiveLabel: "Objectif",
@@ -112,72 +100,68 @@ const CONTENT = {
       items: [
         {
           status: "active",
-          title: "Lab SOC — Détection & Monitoring",
-          description: "Environnement reproduisant un mini SOC : ingestion de logs Windows/Sysmon dans un SIEM, écriture de règles de détection au format Sigma et création d'alertes déclenchées par des scénarios d'attaque simulés (mouvement latéral, persistance, exfiltration).",
-          objective: "Comprendre et reproduire le fonctionnement d'une chaîne de détection SOC de bout en bout, de l'ingestion du log jusqu'à l'alerte.",
+          title: "Lab SOC - Detection Engineering & Incident Investigation",
+          description: "Mise en place d'un environnement SOC, avec ingestion de logs Windows et Linux dans un SIEM Splunk, normalisation des champs, écriture de règles de détection au format Sigma, création d'alertes et de dashboards Splunk, puis lancement de scénarios d'attaque simulés et investigation des incidents remontés.",
+          objective: "Comprendre et reproduire le fonctionnement d'une chaîne de détection SOC de bout en bout, en particulier l'ingestion des logs, la remontée d'alertes, et l'investigation.",
           skills: [
-            "Écriture de règles de détection (Sigma)",
-            "Lecture et corrélation de logs Windows/Sysmon",
-            "Utilisation d'un SIEM (ingestion, recherche, dashboards)",
+            "Lecture et corrélation de logs Windows (Windows Event Logs, Sysmon), Ubuntu (Rsyslog, Auditd)",
+            "Monitoring réseau et investigation de captures réseau (Suricata, zeek, Wireshark, tcpdump)",
+            "Écriture de règles de détection (Sigma) basées sur les Techniques et Tactics de la matrice Entreprise MITRE ATT&CK",
+            "Création d'un script d'automatisation (Python) pour écrire des recherches Splunk à partir des règles de détection Sigma",
+            "Utilisation d'un SIEM Splunk (ingestion et normalisation de logs, recherches, alertes, dashboards)",
             "Cartographie des techniques MITRE ATT&CK",
+            "Simulation et investigation de comportements malveillants, sur Linux et Windows (reconnaissance, accès Initial, élévation de privilèges, mouvement latéral, exfiltration)",
+            "Investigation d'un événement de phishing",
+            "Création d'un beacon Command&Control simple (Python) et détection et analyse du comportement réseau suspect associé",
+            "Simulation et investigation d'événements catégorisés comme faux positifs"
           ],
-          tags: ["SIEM", "Sysmon", "Sigma", "MITRE ATT&CK"],
-          link: "https://github.com/VOTRE-USER/lab-soc",
+          tags: ["SIEM", "Splunk", "Sysmon", "Auditd", "YARA", "Sigma", "MITRE ATT&CK", "Python"],
+          link: "https://github.com/w4phty/SOC-Lab",
         },
         {
-          status: "active",
-          title: "Analyse de protocoles réseau",
-          description: "Étude et décorticage de protocoles réseau au niveau paquet : capture avec Wireshark, parsing avec des scripts dédiés, identification des comportements normaux et suspects sur différents protocoles (DNS, HTTP, TLS).",
-          objective: "Développer un œil affûté pour repérer une anomalie réseau en comprenant en profondeur le fonctionnement normal des protocoles.",
+          status: "completed",
+          title: "Analyse réseau: investigation du traffic généré par Github avec Wireshark",
+          description: "Analyse détaillée du traffic générée suite au chargement de la page web github.com. L'analyse suit le traffic depuis la résolution DNS, aux connections TCP/TLS et QUIC établies, et permet également d'identifier le traffic autre sur le réseau local.",
+          objective: "Comprendre les protocoles principaux de manière approffondie, l'établissement des connections et quelles metadata sont observables.",
           skills: [
             "Lecture et filtrage de captures Wireshark",
-            "Compréhension fine du modèle TCP/IP",
-            "Scripting d'analyse de paquets",
-            "Détection d'anomalies de trafic",
+            "Compréhension du modèle TCP/IP",
+            "Analyse des queries DNS et utilisation des réponses pour suivre la suite du flux",
+            "Suivre un flux TCP/TLS pour l'établissement de la connection et l'échange de données",
+            "Suivre un flux QUIC/TLS pour l'établissement de la connection et l'échange de données",
+            "Compréhension des limites d'une analyse réseau, sans les secrets de session"
           ],
-          tags: ["Wireshark", "TCP/IP", "DNS", "TLS"],
-          link: "https://github.com/VOTRE-USER/network-protocol-analysis",
+          tags: ["Wireshark", "TCP/IP", "DNS", "TCP", "UDP", "TLS", "QUIC", "ARP", "ICMP"],
+          link: "https://github.com/w4phty/Network-Traffic-Analysis",
         },
         {
           status: "active",
-          title: "Writeups TryHackMe — Red Team",
-          description: "Writeups détaillés de rooms orientées offensive : méthodologie complète de la reconnaissance à l'exploitation, choix et justification des outils utilisés, raisonnement pas à pas jusqu'à la résolution.",
-          objective: "Comprendre le raisonnement offensif pour mieux anticiper et détecter les attaques côté défense.",
+          title: "CTF Writeups - Boot-to-root & Low level security",
+          description: "Writeups détaillés de challenges de type CTF (Capture The Flag). Pour les challenges de type boot-to-root, explication de la méthodologie complète avec la reconnaissance, l'exploitation, l'élévation de privilèges. Pour les challenges type reverse engineering et pwn, détail de l'analyse statique et dynamique, explication du patch ou de l'exploit. Pour chaque chaque challenge, le raisonnement est détaillé pas à pas jusqu'à la résolution.",
+          objective: "Comprendre le raisonnement offensif pour mieux anticiper et détecter les attaques côté défense. Acquérir les bases de la sécurité bas niveau via l'analyse dynamique et statique sur des challenges faits pour l'apprentissage.",
           skills: [
-            "Méthodologie de pentest (recon, énumération, exploitation)",
+            "Méthodologie de pentest (reconnaissance, énumération, exploitation, élévation de privilèges)",
             "Utilisation d'outils offensifs courants",
-            "Rédaction technique structurée",
-            "Vision attaquant appliquée à la détection",
+            "Lecture de l'assembleur",
+            "Analyse statique et dynamique de binaires",
+            "Capacité à créer un exploit fonctionnel pour exploiter une vulnérabilité trouvée dans un binaire",
           ],
-          tags: ["TryHackMe", "Pentest", "Méthodologie"],
-          link: "https://github.com/VOTRE-USER/thm-redteam-writeups",
-        },
-        {
-          status: "active",
-          title: "Writeups TryHackMe — Reverse Engineering",
-          description: "Writeups de challenges de reverse engineering : analyse statique et dynamique de binaires, désassemblage avec Ghidra, résolution pas à pas jusqu'au flag.",
-          objective: "Acquérir les bases du reverse engineering nécessaires à l'analyse de malwares.",
-          skills: [
-            "Analyse statique / dynamique de binaires",
-            "Utilisation de Ghidra",
-            "Lecture d'assembleur",
-            "Décomposition d'un problème complexe en étapes",
-          ],
-          tags: ["Reverse Engineering", "Ghidra", "TryHackMe"],
-          link: "https://github.com/VOTRE-USER/thm-reverse-writeups",
+          tags: ["TryHackMe", "HackTheBox", "Pentest", "Reverse Engineering", "Exploit"],
+          link: "https://github.com/w4phty/CTF-writeups",
         },
         {
           status: "planned",
           title: "Lab Malware Analysis",
-          description: "Lab d'analyse de malwares en environnement isolé : analyse statique et dynamique d'échantillons, extraction d'IOCs, rédaction d'un rapport d'analyse type.",
-          objective: "Être capable d'analyser un échantillon suspect en autonomie et d'en extraire des indicateurs exploitables.",
+          description: "Lab d'analyse de malwares en environnement isolé, avec un focus sur Windows: analyse statique et dynamique d'échantillons, extraction d'IOCs, rédaction d'un rapport d'analyse type.",
+          objective: "Être capable d'analyser un échantillon suspect et d'en extraire des indicateurs exploitables.",
           skills: [
             "Sandboxing et isolation d'environnement",
-            "Analyse statique / dynamique de malware",
+            "Analyse statique et dynamique de malware",
             "Extraction d'IOCs",
+            "Ecriture de règles de détection YARA",
             "Rédaction de rapport d'incident",
           ],
-          tags: ["Malware Analysis", "Sandbox", "IOC"],
+          tags: ["Malware Analysis", "IOC", "YARA", "x64dbg", "Ghidra"],
           link: null,
         },
       ],
@@ -185,59 +169,52 @@ const CONTENT = {
 
     certifications: {
       eyebrow: "// certifications",
-      title: "Certifications & formation continue",
-      subtitle: "Feuille de route — à personnaliser selon votre progression réelle.",
+      title: "Formations & Certifications",
+      subtitle: "Feuille de route de mon parcours, regroupant certifications et formations, terminées et en cours.",
       statusLabels: { done: "Obtenue", progress: "En cours", planned: "Planifiée" },
       items: [
-        { name: "Nom de la certification obtenue", issuer: "Organisme émetteur (à compléter)", status: "done", date: "Mois Année" },
-        { name: "Jr Penetration Tester", issuer: "TryHackMe", status: "progress" },
-        { name: "CompTIA Security+", issuer: "CompTIA", status: "planned" },
-        { name: "Blue Team Level 1 (BTL1)", issuer: "Security Blue Team", status: "planned" },
+        { name: "Formation en cybersécurité défensive en autonomie", issuer: "SOC, Detection engineering, Incidence response", status: "progress"},
+        { name: "Certification DevOps Foundation", issuer: "DevOps Institute", status: "done", date: "2025" },
+        { name: "Certification Mulesoft Developer Level 1", issuer: "Salesforce", status: "done", date: "2025" },
+        { name: "Certification Junior Penetration Tester", issuer: "TryHackMe", status: "done", date: "2023" },
+        { name: "Formation Infrastructure et production", issuer: "Solutec, Lyon", status: "done", date: "2023" },
+        { name: "Ingénieure Génie de l'Eau et de l'Environnement", issuer: "ENSIL-ENSCI, Limoges",  status: "done", date: "2019-2022" },
+        { name: "Classe préparatoir PCSI-PC", issuer: "Lycée Pierre de Fermat, Toulouse",  status: "done", date: "2017-2019" },
+        { name: "Baccalauréat Scientifique", issuer: "Lycée Les Chartreux, Lyon", status: "done", date: "2017" },
       ],
     },
 
     timeline: {
-      eyebrow: "// parcours",
-      title: "Formation & expérience",
+      eyebrow: "// experience",
+      title: "Expérience professionelle",
       items: [
         {
-          period: "En cours",
-          role: "Reconversion - Cybersécurité défensive",
-          org: "Auto-formation",
-          description: "Labs personnels, writeups TryHackMe, veille active MITRE ATT&CK / DFIR, préparation de certifications.",
+          period: "Depuis 08/2025",
+          role: "Développeuse logiciel",
+          org: "CGI, Avignon",
+          description: "Développement de solutions middleware avec Mulesoft. Conception technique, développement, mappings de données. Connexions à différents systèmes de données: SAP, Salesforce, Oracle. Missions pour différents clients. Sensibilisation OWASP auprès du personnel de l'agence d'Avignon.",
         },
         {
-          period: "2022 - 2026",
-          role: "Développeur logiciel",
-          org: "Nom de l'entreprise (à compléter)",
-          description: "4 ans de développement : conception, code review, débogage de systèmes complexes — des compétences directement transférables à l'analyse et à l'investigation.",
+          period: "10/2023 - 07/2025",
+          role: "Développeuse fullstack",
+          org: "CGI, Limoges",
+          description: "Développement web sur 2 applications web, conception technique, écriture des tests unitaires et d'assemblage. Réalisation de migrations techniques, rédaction de documentation technique, débuggage avancé. Démonstrations régulières auprès du personnel non technique.",
         },
         {
-          period: "2019 - 2022",
-          role: "Ingénieure Génie de l'Eau et de l'Environnement",
-          org: "ENSIL-ENSCI, Limoges",
-          description: "Potabilisation, procédés d'assainissement, réseau hydraulique, gestion des déchets, électrotechnique, automatismes industriels",
-        },
-        {
-          period: "2019 - 2022",
-          role: "Classe préparatoir PCSI-PC",
-          org: "Lycée Pierre de Fermat, Toulouse",
-          description: "Classe préparatoire aux grandes écoles, Maths sup/Math spé, spécialité Physique, Chimie et Sciences de l'ingénieur",
-        },
-        {
-          period: "2017",
-          role: "Baccalauréat Scientifique",
-          org: "Lycée Les Chartreux, Lyon "
-        },
+          period: "02/2023 - 09/2023",
+          role: "Ingénieure IT",
+          org: "Solutec, Lyon",
+          description: "Développement full-stack d'une application web (Java SpringBoot, PostgreSQL, API Rest, Angular). Mission consulting pour Enedis: gestion des demandes d'ouvertures et de modifications de flux applicatifs. Développement d'un outil interne d'automatisation (Python).",
+        }
       ],
     },
 
     contact: {
       eyebrow: "// contact",
       title: "Me contacter",
-      text: "Ouvert aux opportunités SOC Analyst / Detection Engineer, et à toute discussion autour de la cybersécurité défensive.",
+      text: "Je suis ouverte aux opportunités SOC Analyst / Detection Engineer, et à toute discussion autour de la cybersécurité défensive.",
       emailLabel: "Email",
-      emailValue: "votre.email@example.com",
+      emailValue: "claire.favre42@gmail.com",
       linkedinLabel: "LinkedIn",
       githubLabel: "GitHub",
       cvLabel: "Télécharger mon CV",
@@ -253,7 +230,7 @@ const CONTENT = {
     },
 
     footer: {
-      text: "© 2026 Votre Nom — Construit avec HTML/CSS/JS, hébergé sur GitHub Pages.",
+      text: "© 2026 Claire Favre — hébergé sur GitHub Pages.",
     },
   },
 
@@ -486,10 +463,6 @@ const CONTENT = {
     },
   },
 };
-
-/* ==========================================================================
-   RENDU — vous n'avez normalement pas besoin de modifier ce qui suit.
-   ========================================================================== */
 
 let currentLang = "fr";
 
