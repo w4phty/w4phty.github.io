@@ -1,11 +1,3 @@
-/* ==========================================================================
-   PORTFOLIO CYBERSÉCURITÉ — style.css
-   Direction : "console SOC" concentrée dans le hero (boot lines + asset
-   card), puis des sections calmes et lisibles pour le contenu (projets,
-   certifications, parcours, contact). Accent teal (signal), ambre pour
-   "en cours", ardoise pour "planifié / à venir".
-   ========================================================================== */
-
 /* ---------- Fonts ---------- */
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap');
 

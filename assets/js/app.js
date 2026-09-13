@@ -6,7 +6,7 @@ const CONTENT = {
 
     nav: {
       brandName: "Claire Favre",
-      brandExt: ".sec",
+      brandExt: "",
       about: "À propos",
       skills: "Compétences",
       projects: "Projets",
@@ -23,7 +23,7 @@ const CONTENT = {
         "> transition vers la cybersécurité défensive",
       ],
       titleLine1: "Du développement logiciel",
-      titleLine2: "à la cybersécurité.",
+      titleLine2: "à la cybersécurité",
       subtitle:
         "Je mets 3 ans d'expérience en développement au service de la détection et de la réponse à incident. Mon portfolio contient des labs, writeups et outils, documentés et publiés au fil de ma progression.",
       ctaPrimary: "Voir les projets",
@@ -238,7 +238,7 @@ const CONTENT = {
 
     nav: {
       brandName: "Claire Favre",
-      brandExt: ".sec",
+      brandExt: "",
       about: "About",
       skills: "Skills",
       projects: "Projects",
