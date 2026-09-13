@@ -255,7 +255,7 @@ const CONTENT = {
         "> transitioning to defensive cybersecurity",
       ],
       titleLine1: "From software development",
-      titleLine2: "to cybersecurity.",
+      titleLine2: "to cybersecurity",
       subtitle:
         "I'm putting 3 years of development experience to work in detection and incident response. My portfolio contains labs, writeups and tools, documented and published as I go.",
       ctaPrimary: "View projects",
